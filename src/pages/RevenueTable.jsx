@@ -69,6 +69,8 @@ const RevenueTable = () => {
         })
         return merged
     }
+
+    //format number
     const formatNumber = number => {
         return new Intl.NumberFormat('en-IN', {
             style: 'currency',
