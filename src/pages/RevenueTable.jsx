@@ -11,6 +11,8 @@ const RevenueTable = () => {
     const [sortOrder, setSortOrder] = useState('asc');
     const [searchError, setSearchError] = useState(false)
 
+
+    //merged all branch
     useEffect(() => {
         const allProducts = [data1, data2, data3].flatMap(allBranchData => allBranchData.products)
         console.log(allProducts)
@@ -27,7 +29,7 @@ const RevenueTable = () => {
     }, [])
 
 
-
+//filter data
     useEffect(() => {
         const filtered = products.filter(product => 
             product.name.toLowerCase().includes(filter.toLowerCase())
