@@ -3,6 +3,7 @@ import "../pages/revenueTable.css"
 import data1 from "../api/branch1.json"
 import data2 from "../api/branch2.json"
 import data3 from "../api/branch3.json"
+
 const RevenueTable = () => {
     const [products, setProducts] = useState([])
     const [filteredProducts, setFilteredProducts] = useState([]);
@@ -105,6 +106,7 @@ const RevenueTable = () => {
                 <p className='error_message'>{searchError ? "No matching products found" : ""}</p>
             </div>
             <div className='table_wrapper'>
+            
                 <table>
                     <thead>
                         <tr>

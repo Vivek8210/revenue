@@ -103,6 +103,7 @@ table tbody td{
     border: 1px solid #00A76F;
 }
 
+/* mobile responsive */
 @media(max-width:480px){
     table tbody tr{
         gap:0
