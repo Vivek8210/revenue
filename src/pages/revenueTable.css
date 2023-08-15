@@ -1,0 +1,116 @@
+.main_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.table_wrapper{
+    overflow-x: scroll;
+    width: 100%;
+}
+
+
+table{
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+table thead tr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    background-color: #00A76F!important ;
+    color: #fff;
+    border-radius: 16px;
+}
+
+table thead th{
+    gap: 200px;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+table tfoot tr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    border-radius: 8px;
+    border-top: 1px solid black;
+}
+table tfoot tr td{
+    width: 200px;
+    font-size: larger;
+    font-weight: bolder;
+    gap: 200px;
+    border-radius: 8px;
+}
+
+table tbody tr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    border-radius: 8px;
+}
+table tr:nth-child(odd){
+    background-color: #F4F6F8;
+    padding: 5px 0;
+}
+table tr:nth-child(even){
+    padding: 5px 0;
+}
+
+table tbody td{
+    width: 200px;
+}
+.error_message{
+    color: red;
+}
+.searh_wrapper{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.searh_wrapper label{
+    text-align: left;
+    font-size: larger;
+    font-weight: normal;
+    margin-right: 70px;
+
+}
+.searh_wrapper input{
+    padding: 16px 14px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid rgb(145,158,171,0.2);
+    background-color: #fff;
+    color: #919eab;
+    font-size: 14px;
+    font-weight: normal;
+    font-weight: 400;
+    line-height: 22px;
+    width: 250px;
+    -webkit-tap-highlight-color:transparent
+}
+.searh_wrapper input :focus{
+    color: #212b36;
+    outline: none;
+    border: 1px solid #00A76F;
+}
+
+@media(max-width:480px){
+    table tbody tr{
+        gap:0
+    }
+    table thead tr{
+        gap:0
+    }
+    table tfoot tr{
+        gap:0
+    }
+}
